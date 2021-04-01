@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3112832614B6F400418058 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3112822614B6F400418058 /* ModelData.swift */; };
+		2E5230F62614BF9E00237940 /* AddBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5230F52614BF9E00237940 /* AddBudget.swift */; };
 		2EBFEE65260A1ECA00C76770 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFEE64260A1ECA00C76770 /* Transaction.swift */; };
 		2EBFEE6E260A256D00C76770 /* BudgetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFEE6D260A256D00C76770 /* BudgetList.swift */; };
 		2EC0FAB32608DBC5001B1F43 /* BudgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC0FAB22608DBC5001B1F43 /* BudgetApp.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E3112822614B6F400418058 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		2E5230F52614BF9E00237940 /* AddBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudget.swift; sourceTree = "<group>"; };
 		2EBFEE64260A1ECA00C76770 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		2EBFEE6D260A256D00C76770 /* BudgetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetList.swift; sourceTree = "<group>"; };
 		2EC0FAAF2608DBC5001B1F43 /* Budget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				2EBFEE64260A1ECA00C76770 /* Transaction.swift */,
+				2E3112822614B6F400418058 /* ModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			children = (
 				2EC0FAE12608DC5C001B1F43 /* BudgetRow.swift */,
 				2EBFEE6D260A256D00C76770 /* BudgetList.swift */,
+				2E5230F52614BF9E00237940 /* AddBudget.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,9 +292,11 @@
 			files = (
 				2EC0FAB52608DBC5001B1F43 /* ContentView.swift in Sources */,
 				2EC0FAE22608DC5C001B1F43 /* BudgetRow.swift in Sources */,
+				2E5230F62614BF9E00237940 /* AddBudget.swift in Sources */,
 				2EBFEE6E260A256D00C76770 /* BudgetList.swift in Sources */,
 				2EBFEE65260A1ECA00C76770 /* Transaction.swift in Sources */,
 				2EC0FAB32608DBC5001B1F43 /* BudgetApp.swift in Sources */,
+				2E3112832614B6F400418058 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

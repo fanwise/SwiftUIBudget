@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct BudgetList: View {
-    let transaction = Transaction(date: Date(),
-                                  amount: 18.88,
-                                  category: "吃饭",
-                                  comment: "肯德基",
-                                  payMethod: "支付宝",
-                                  location: nil)
+    @EnvironmentObject var modelData: ModelData
+    
+    func delete(at index: IndexSet) {
+        modelData.delete(at: index)
+    }
     
     var body: some View {
-        NavigationView {
-            List(0..<5) { item in
-                BudgetRow(transaction: transaction)
+        ZStack {
+            NavigationView {
+                List {
+                    ForEach(modelData.transactions) { item in
+                        BudgetRow(transaction: item)
+                    }
+                    .onDelete(perform: delete)
+                }
+                .navigationTitle("Budget")
             }
-            .navigationTitle("Budget")
         }
     }
 }
@@ -28,5 +32,6 @@ struct BudgetList: View {
 struct BudgetList_Previews: PreviewProvider {
     static var previews: some View {
         BudgetList()
+            .environmentObject(ModelData())
     }
 }
